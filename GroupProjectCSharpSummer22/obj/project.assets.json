@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aaron\\source\\repos\\GroupProjectCSharpSummer22\\GroupProjectCSharpSummer22.csproj",
+      "projectUniqueName": "C:\\Users\\aaron\\Source\\Repos\\GroupProjectC-Summer22\\GroupProjectCSharpSummer22\\GroupProjectCSharpSummer22.csproj",
       "projectName": "GroupProjectCSharpSummer22",
-      "projectPath": "C:\\Users\\aaron\\source\\repos\\GroupProjectCSharpSummer22\\GroupProjectCSharpSummer22.csproj",
+      "projectPath": "C:\\Users\\aaron\\Source\\Repos\\GroupProjectC-Summer22\\GroupProjectCSharpSummer22\\GroupProjectCSharpSummer22.csproj",
       "packagesPath": "C:\\Users\\aaron\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aaron\\source\\repos\\GroupProjectCSharpSummer22\\obj\\",
+      "outputPath": "C:\\Users\\aaron\\Source\\Repos\\GroupProjectC-Summer22\\GroupProjectCSharpSummer22\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\aaron\\AppData\\Roaming\\NuGet\\NuGet.Config",

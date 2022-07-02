@@ -1,0 +1,17 @@
+C:\Users\aaron\source\repos\GroupProjectC-Summer22\GroupProjectCSharpSummer22\bin\Debug\net6.0-windows\GroupProjectCSharpSummer22.exe
+C:\Users\aaron\source\repos\GroupProjectC-Summer22\GroupProjectCSharpSummer22\bin\Debug\net6.0-windows\GroupProjectCSharpSummer22.deps.json
+C:\Users\aaron\source\repos\GroupProjectC-Summer22\GroupProjectCSharpSummer22\bin\Debug\net6.0-windows\GroupProjectCSharpSummer22.runtimeconfig.json
+C:\Users\aaron\source\repos\GroupProjectC-Summer22\GroupProjectCSharpSummer22\bin\Debug\net6.0-windows\GroupProjectCSharpSummer22.dll
+C:\Users\aaron\source\repos\GroupProjectC-Summer22\GroupProjectCSharpSummer22\bin\Debug\net6.0-windows\GroupProjectCSharpSummer22.pdb
+C:\Users\aaron\source\repos\GroupProjectC-Summer22\GroupProjectCSharpSummer22\obj\Debug\net6.0-windows\GroupProjectCSharpSummer22.csproj.AssemblyReference.cache
+C:\Users\aaron\source\repos\GroupProjectC-Summer22\GroupProjectCSharpSummer22\obj\Debug\net6.0-windows\GroupProjectCSharpSummer22.Form1.resources
+C:\Users\aaron\source\repos\GroupProjectC-Summer22\GroupProjectCSharpSummer22\obj\Debug\net6.0-windows\GroupProjectCSharpSummer22.csproj.GenerateResource.cache
+C:\Users\aaron\source\repos\GroupProjectC-Summer22\GroupProjectCSharpSummer22\obj\Debug\net6.0-windows\GroupProjectCSharpSummer22.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aaron\source\repos\GroupProjectC-Summer22\GroupProjectCSharpSummer22\obj\Debug\net6.0-windows\GroupProjectCSharpSummer22.AssemblyInfoInputs.cache
+C:\Users\aaron\source\repos\GroupProjectC-Summer22\GroupProjectCSharpSummer22\obj\Debug\net6.0-windows\GroupProjectCSharpSummer22.AssemblyInfo.cs
+C:\Users\aaron\source\repos\GroupProjectC-Summer22\GroupProjectCSharpSummer22\obj\Debug\net6.0-windows\GroupProjectCSharpSummer22.csproj.CoreCompileInputs.cache
+C:\Users\aaron\source\repos\GroupProjectC-Summer22\GroupProjectCSharpSummer22\obj\Debug\net6.0-windows\GroupProjectCSharpSummer22.dll
+C:\Users\aaron\source\repos\GroupProjectC-Summer22\GroupProjectCSharpSummer22\obj\Debug\net6.0-windows\refint\GroupProjectCSharpSummer22.dll
+C:\Users\aaron\source\repos\GroupProjectC-Summer22\GroupProjectCSharpSummer22\obj\Debug\net6.0-windows\GroupProjectCSharpSummer22.pdb
+C:\Users\aaron\source\repos\GroupProjectC-Summer22\GroupProjectCSharpSummer22\obj\Debug\net6.0-windows\GroupProjectCSharpSummer22.genruntimeconfig.cache
+C:\Users\aaron\source\repos\GroupProjectC-Summer22\GroupProjectCSharpSummer22\obj\Debug\net6.0-windows\ref\GroupProjectCSharpSummer22.dll
