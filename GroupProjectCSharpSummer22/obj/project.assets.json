@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\aaron\\.nuget\\packages\\": {}
+    "C:\\Users\\Jensi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aaron\\Source\\Repos\\GroupProjectC-Summer22\\GroupProjectCSharpSummer22\\GroupProjectCSharpSummer22.csproj",
+      "projectUniqueName": "C:\\Users\\Jensi\\Source\\Repos\\GroupProjectC-Summer22\\GroupProjectCSharpSummer22\\GroupProjectCSharpSummer22.csproj",
       "projectName": "GroupProjectCSharpSummer22",
-      "projectPath": "C:\\Users\\aaron\\Source\\Repos\\GroupProjectC-Summer22\\GroupProjectCSharpSummer22\\GroupProjectCSharpSummer22.csproj",
-      "packagesPath": "C:\\Users\\aaron\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aaron\\Source\\Repos\\GroupProjectC-Summer22\\GroupProjectCSharpSummer22\\obj\\",
+      "projectPath": "C:\\Users\\Jensi\\Source\\Repos\\GroupProjectC-Summer22\\GroupProjectCSharpSummer22\\GroupProjectCSharpSummer22.csproj",
+      "packagesPath": "C:\\Users\\Jensi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jensi\\Source\\Repos\\GroupProjectC-Summer22\\GroupProjectCSharpSummer22\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\aaron\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Jensi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
