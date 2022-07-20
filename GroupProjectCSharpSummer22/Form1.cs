@@ -14,17 +14,37 @@ namespace GroupProjectCSharpSummer22
             
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void DeleteBtn_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void SaveBtn_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void TotalTxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ClearBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NewBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CalcBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ExitBtn_Click(object sender, EventArgs e)
         {
 
         }

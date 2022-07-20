@@ -37,12 +37,14 @@
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cost = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Notes = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.NewBtn = new System.Windows.Forms.Button();
+            this.SaveBtn = new System.Windows.Forms.Button();
+            this.DeleteBtn = new System.Windows.Forms.Button();
+            this.ClearBtn = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.CalcBtn = new System.Windows.Forms.Button();
+            this.ExitBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -111,43 +113,45 @@
             this.Notes.HeaderText = "Notes";
             this.Notes.Name = "Notes";
             // 
-            // button1
+            // NewBtn
             // 
-            this.button1.Location = new System.Drawing.Point(282, 430);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.NewBtn.Location = new System.Drawing.Point(282, 430);
+            this.NewBtn.Name = "NewBtn";
+            this.NewBtn.Size = new System.Drawing.Size(75, 23);
+            this.NewBtn.TabIndex = 3;
+            this.NewBtn.Text = "New";
+            this.NewBtn.UseVisualStyleBackColor = true;
+            this.NewBtn.Click += new System.EventHandler(this.NewBtn_Click);
             // 
-            // button2
+            // SaveBtn
             // 
-            this.button2.Location = new System.Drawing.Point(429, 430);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.SaveBtn.Location = new System.Drawing.Point(429, 430);
+            this.SaveBtn.Name = "SaveBtn";
+            this.SaveBtn.Size = new System.Drawing.Size(75, 23);
+            this.SaveBtn.TabIndex = 4;
+            this.SaveBtn.Text = "Save";
+            this.SaveBtn.UseVisualStyleBackColor = true;
+            this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
             // 
-            // button3
+            // DeleteBtn
             // 
-            this.button3.Location = new System.Drawing.Point(586, 430);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.DeleteBtn.Location = new System.Drawing.Point(586, 430);
+            this.DeleteBtn.Name = "DeleteBtn";
+            this.DeleteBtn.Size = new System.Drawing.Size(75, 23);
+            this.DeleteBtn.TabIndex = 5;
+            this.DeleteBtn.Text = "Delete";
+            this.DeleteBtn.UseVisualStyleBackColor = true;
+            this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
             // 
-            // button4
+            // ClearBtn
             // 
-            this.button4.Location = new System.Drawing.Point(727, 430);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.ClearBtn.Location = new System.Drawing.Point(727, 430);
+            this.ClearBtn.Name = "ClearBtn";
+            this.ClearBtn.Size = new System.Drawing.Size(75, 23);
+            this.ClearBtn.TabIndex = 6;
+            this.ClearBtn.Text = "Clear";
+            this.ClearBtn.UseVisualStyleBackColor = true;
+            this.ClearBtn.Click += new System.EventHandler(this.ClearBtn_Click);
             // 
             // textBox1
             // 
@@ -163,19 +167,41 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(232, 23);
             this.textBox2.TabIndex = 8;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textBox2.TextChanged += new System.EventHandler(this.TotalTxt_TextChanged);
+            // 
+            // CalcBtn
+            // 
+            this.CalcBtn.Location = new System.Drawing.Point(500, 480);
+            this.CalcBtn.Name = "CalcBtn";
+            this.CalcBtn.Size = new System.Drawing.Size(90, 23);
+            this.CalcBtn.TabIndex = 9;
+            this.CalcBtn.Text = "Calculate";
+            this.CalcBtn.UseVisualStyleBackColor = true;
+            this.CalcBtn.Click += new System.EventHandler(this.CalcBtn_Click);
+            // 
+            // ExitBtn
+            // 
+            this.ExitBtn.Location = new System.Drawing.Point(500, 579);
+            this.ExitBtn.Name = "ExitBtn";
+            this.ExitBtn.Size = new System.Drawing.Size(90, 23);
+            this.ExitBtn.TabIndex = 10;
+            this.ExitBtn.Text = "Exit";
+            this.ExitBtn.UseVisualStyleBackColor = true;
+            this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1085, 610);
+            this.Controls.Add(this.ExitBtn);
+            this.Controls.Add(this.CalcBtn);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ClearBtn);
+            this.Controls.Add(this.DeleteBtn);
+            this.Controls.Add(this.SaveBtn);
+            this.Controls.Add(this.NewBtn);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form1";
             this.Padding = new System.Windows.Forms.Padding(5);
@@ -189,10 +215,10 @@
         #endregion
 
         private DataGridView dataGridView1;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
+        private Button NewBtn;
+        private Button SaveBtn;
+        private Button DeleteBtn;
+        private Button ClearBtn;
         private TextBox textBox1;
         private TextBox textBox2;
         private DataGridViewTextBoxColumn Column1;
@@ -203,5 +229,7 @@
         private DataGridViewTextBoxColumn Column6;
         private DataGridViewTextBoxColumn Cost;
         private DataGridViewTextBoxColumn Notes;
+        private Button CalcBtn;
+        private Button ExitBtn;
     }
 }

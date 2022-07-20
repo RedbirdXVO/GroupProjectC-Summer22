@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jensi\\Source\\Repos\\GroupProjectC-Summer22\\GroupProjectCSharpSummer22\\GroupProjectCSharpSummer22.csproj": {}
+    "C:\\Users\\Jensi\\source\\repos\\GroupProjectC-Summer22\\GroupProjectCSharpSummer22\\GroupProjectCSharpSummer22.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jensi\\Source\\Repos\\GroupProjectC-Summer22\\GroupProjectCSharpSummer22\\GroupProjectCSharpSummer22.csproj": {
+    "C:\\Users\\Jensi\\source\\repos\\GroupProjectC-Summer22\\GroupProjectCSharpSummer22\\GroupProjectCSharpSummer22.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jensi\\Source\\Repos\\GroupProjectC-Summer22\\GroupProjectCSharpSummer22\\GroupProjectCSharpSummer22.csproj",
+        "projectUniqueName": "C:\\Users\\Jensi\\source\\repos\\GroupProjectC-Summer22\\GroupProjectCSharpSummer22\\GroupProjectCSharpSummer22.csproj",
         "projectName": "GroupProjectCSharpSummer22",
-        "projectPath": "C:\\Users\\Jensi\\Source\\Repos\\GroupProjectC-Summer22\\GroupProjectCSharpSummer22\\GroupProjectCSharpSummer22.csproj",
+        "projectPath": "C:\\Users\\Jensi\\source\\repos\\GroupProjectC-Summer22\\GroupProjectCSharpSummer22\\GroupProjectCSharpSummer22.csproj",
         "packagesPath": "C:\\Users\\Jensi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jensi\\Source\\Repos\\GroupProjectC-Summer22\\GroupProjectCSharpSummer22\\obj\\",
+        "outputPath": "C:\\Users\\Jensi\\source\\repos\\GroupProjectC-Summer22\\GroupProjectCSharpSummer22\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Jensi\\AppData\\Roaming\\NuGet\\NuGet.Config",
