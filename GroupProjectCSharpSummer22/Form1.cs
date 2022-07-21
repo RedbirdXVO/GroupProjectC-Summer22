@@ -5,18 +5,16 @@ namespace GroupProjectCSharpSummer22
     public partial class Form1 : Form
     {
         DataTable table;
-        public int i;
-        public List<MaterialEstimate> MaterialEstimateList { get; set; } //[i]
+        List<MaterialEstimate> MaterialEstimateListField = new List<MaterialEstimate>();
         public Form1()
         {
-            var materialEstimateList = MaterialEstimateList;
             InitializeComponent();
         }
         private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
-            
+
         }
- 
+
         private void DeleteBtn_Click(object sender, EventArgs e)
         {
             int selectedIndex = dataGridView1.CurrentCell.RowIndex;
@@ -29,9 +27,18 @@ namespace GroupProjectCSharpSummer22
 
         private void SaveBtn_Click(object sender, EventArgs e)
         {
-            var materielEstimate = new MaterialEstimate(Item, Materiel, MaterielSize, Description, Quantity, UnitCost, Note, Category);
-            MaterialEstimateList.Add(materielEstimate);
-            Form1.Refresh();
+            //CateTxt, ItemTxt, MateTxt, SizeTxt, QuantTxt, UnitTxt, NotesTxt
+            var materielEstimate = new MaterialEstimate(ItemTxt.Text.ToString(), MateTxt.Text.ToString(), SizeTxt.Text.ToString(), Convert.ToDouble(QuantTxt.Text), Convert.ToDouble(UnitTxt.Text), NotesTxt.Text.ToString(), CateTxt.Text.ToString());
+            MaterialEstimateListField.Add(materielEstimate);
+            table.Rows.Add(materielEstimate);
+            ItemTxt.Clear();
+            MateTxt.Clear();
+            SizeTxt.Clear();
+            QuantTxt.Clear();
+            UnitTxt.Clear();
+            NotesTxt.Clear();
+            CateTxt.Clear();
+
         }
 
         private void TotalTxt_TextChanged(object sender, EventArgs e)
@@ -62,7 +69,32 @@ namespace GroupProjectCSharpSummer22
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = MaterialEstimateList;
+            table = new DataTable();
+            table.Columns.Add("Category", typeof(String));
+            table.Columns.Add("Item", typeof(String));
+            table.Columns.Add("Material", typeof(String));
+            table.Columns.Add("Size Description", typeof(String));
+            table.Columns.Add("Quantity", typeof(Double));
+            table.Columns.Add("Unit Cost", typeof(Double));
+            table.Columns.Add("Cost", typeof(Double));
+            table.Columns.Add("Notes", typeof(String));
+
+            dataGridView1.DataSource = table;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_DataSourceChanged(object sender, EventArgs e)
+        {
+            dataGridView1.Refresh();
         }
     }
 }
