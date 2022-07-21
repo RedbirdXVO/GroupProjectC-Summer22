@@ -16,7 +16,12 @@ namespace GroupProjectCSharpSummer22
 
         private void DeleteBtn_Click(object sender, EventArgs e)
         {
-
+            int selectedIndex = dataGridView1.CurrentCell.RowIndex;
+            if (selectedIndex > -1)
+            {
+                dataGridView1.Rows.RemoveAt(selectedIndex);
+                dataGridView1.Refresh();
+            }
         }
 
         private void SaveBtn_Click(object sender, EventArgs e)
@@ -31,12 +36,13 @@ namespace GroupProjectCSharpSummer22
 
         private void ClearBtn_Click(object sender, EventArgs e)
         {
-
+            dataGridView1.Rows.Clear();
+            dataGridView1.Refresh();
         }
 
         private void NewBtn_Click(object sender, EventArgs e)
         {
-
+            dataGridView1.Rows.Add();
         }
 
         private void CalcBtn_Click(object sender, EventArgs e)
@@ -46,7 +52,7 @@ namespace GroupProjectCSharpSummer22
 
         private void ExitBtn_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }

@@ -42,7 +42,7 @@
             this.DeleteBtn = new System.Windows.Forms.Button();
             this.ClearBtn = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TotalTxt = new System.Windows.Forms.TextBox();
             this.CalcBtn = new System.Windows.Forms.Button();
             this.ExitBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -50,9 +50,7 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -64,11 +62,12 @@
             this.Column6,
             this.Cost,
             this.Notes});
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Top;
             this.dataGridView1.Location = new System.Drawing.Point(5, 5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 43;
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(1072, 361);
+            this.dataGridView1.Size = new System.Drawing.Size(1075, 361);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
@@ -89,7 +88,7 @@
             // 
             // Column4
             // 
-            this.Column4.HeaderText = "SizeDescriptions";
+            this.Column4.HeaderText = "Size Descriptions";
             this.Column4.Name = "Column4";
             // 
             // Column5
@@ -137,7 +136,7 @@
             // 
             this.DeleteBtn.Location = new System.Drawing.Point(586, 430);
             this.DeleteBtn.Name = "DeleteBtn";
-            this.DeleteBtn.Size = new System.Drawing.Size(75, 23);
+            this.DeleteBtn.Size = new System.Drawing.Size(75, 25);
             this.DeleteBtn.TabIndex = 5;
             this.DeleteBtn.Text = "Delete";
             this.DeleteBtn.UseVisualStyleBackColor = true;
@@ -145,9 +144,10 @@
             // 
             // ClearBtn
             // 
+            this.ClearBtn.AutoSize = true;
             this.ClearBtn.Location = new System.Drawing.Point(727, 430);
             this.ClearBtn.Name = "ClearBtn";
-            this.ClearBtn.Size = new System.Drawing.Size(75, 23);
+            this.ClearBtn.Size = new System.Drawing.Size(75, 25);
             this.ClearBtn.TabIndex = 6;
             this.ClearBtn.Text = "Clear";
             this.ClearBtn.UseVisualStyleBackColor = true;
@@ -157,17 +157,19 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(429, 372);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(232, 23);
             this.textBox1.TabIndex = 7;
             this.textBox1.Text = "Your Total is:";
             // 
-            // textBox2
+            // TotalTxt
             // 
-            this.textBox2.Location = new System.Drawing.Point(429, 401);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(232, 23);
-            this.textBox2.TabIndex = 8;
-            this.textBox2.TextChanged += new System.EventHandler(this.TotalTxt_TextChanged);
+            this.TotalTxt.Location = new System.Drawing.Point(429, 401);
+            this.TotalTxt.Name = "TotalTxt";
+            this.TotalTxt.ReadOnly = true;
+            this.TotalTxt.Size = new System.Drawing.Size(232, 23);
+            this.TotalTxt.TabIndex = 8;
+            this.TotalTxt.TextChanged += new System.EventHandler(this.TotalTxt_TextChanged);
             // 
             // CalcBtn
             // 
@@ -185,7 +187,7 @@
             this.ExitBtn.Name = "ExitBtn";
             this.ExitBtn.Size = new System.Drawing.Size(90, 23);
             this.ExitBtn.TabIndex = 10;
-            this.ExitBtn.Text = "Exit";
+            this.ExitBtn.Text = "Save && Exit";
             this.ExitBtn.UseVisualStyleBackColor = true;
             this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
             // 
@@ -196,7 +198,7 @@
             this.ClientSize = new System.Drawing.Size(1085, 610);
             this.Controls.Add(this.ExitBtn);
             this.Controls.Add(this.CalcBtn);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.TotalTxt);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.ClearBtn);
             this.Controls.Add(this.DeleteBtn);
@@ -205,7 +207,9 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form1";
             this.Padding = new System.Windows.Forms.Padding(5);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -213,14 +217,14 @@
         }
 
         #endregion
-
-        private DataGridView dataGridView1;
         private Button NewBtn;
         private Button SaveBtn;
         private Button DeleteBtn;
         private Button ClearBtn;
         private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox TotalTxt;
+        private Button CalcBtn;
+        private Button ExitBtn;
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column3;
@@ -229,7 +233,6 @@
         private DataGridViewTextBoxColumn Column6;
         private DataGridViewTextBoxColumn Cost;
         private DataGridViewTextBoxColumn Notes;
-        private Button CalcBtn;
-        private Button ExitBtn;
+        public DataGridView dataGridView1;
     }
 }
