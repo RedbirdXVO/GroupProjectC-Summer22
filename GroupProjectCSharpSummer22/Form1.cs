@@ -5,6 +5,7 @@ namespace GroupProjectCSharpSummer22
     public partial class Form1 : Form
     {
         DataTable table;
+        //MarerialEstimateListField[i] = new MaterialEstimate;
         List<MaterialEstimate> MaterialEstimateListField = new List<MaterialEstimate>();
         public Form1()
         {
@@ -20,7 +21,8 @@ namespace GroupProjectCSharpSummer22
             int selectedIndex = dataGridView1.CurrentCell.RowIndex;
             if (selectedIndex > -1)
             {
-                dataGridView1.Rows.RemoveAt(selectedIndex);
+                MaterialEstimateListField.RemoveAt(selectedIndex);
+                table.Rows.RemoveAt(selectedIndex);
                 dataGridView1.Refresh();
             }
         }
@@ -28,20 +30,26 @@ namespace GroupProjectCSharpSummer22
         private void SaveBtn_Click(object sender, EventArgs e)
         {
             {
+                /*if(x = 0)
+                 {
+                    var selectedIndex = dataGridView1.CurrentCell.RowIndex;
+                    var materialEstimate = MaterialEstimateListField[selectedIndex];
+                    
+                    */
                 if (!string.IsNullOrEmpty(MateTxt.Text) && !string.IsNullOrEmpty(SizeTxt.Text) && !string.IsNullOrEmpty(ItemTxt.Text) && !string.IsNullOrEmpty(QuantTxt.Text) && !string.IsNullOrEmpty(UnitTxt.Text) && !string.IsNullOrEmpty(CateTxt.Text))
                 {
+                    var selectedIndex = dataGridView1.CurrentCell.RowIndex;
                     var materielEstimate = new MaterialEstimate(ItemTxt.Text.ToString(), MateTxt.Text.ToString(), SizeTxt.Text.ToString(), Convert.ToInt32(QuantTxt.Text), Convert.ToDouble(UnitTxt.Text), NotesTxt.Text.ToString(), CateTxt.Text.ToString());
                     MaterialEstimateListField.Add(materielEstimate);
                     var newRow = table.Rows.Add();
                     newRow["Category"] = materielEstimate.Category;
-                    newRow["Item"] = materielEstimate.Item;
-                    newRow["Material"] = materielEstimate.Material;
+                    newRow["Item"] = ItemTxt.Text.ToString();
+                    newRow["Material"] = MateTxt.Text;
                     newRow["Size Description"] = materielEstimate.MaterialSize;
                     newRow["Quantity"] = materielEstimate.Quantity;
                     newRow["Unit Cost"] = materielEstimate.UnitCost.ToString("C");
                     newRow["Cost"] = materielEstimate.Cost.ToString("C");
                     newRow["Notes"] = materielEstimate.Note;
-                    Calculate();
                 }
                 else
                 {
@@ -50,15 +58,7 @@ namespace GroupProjectCSharpSummer22
             }
 
         }
-        private void Calculate()
-        {
-            var totalCost = 0.00;
-            foreach (var row in MaterialEstimateListField)
-            {
-                totalCost += row.Cost;
-            }
-            TotalTxt.Text = totalCost.ToString("C");
-        }
+        
 
         private void TotalTxt_TextChanged(object sender, EventArgs e)
         {
@@ -69,6 +69,8 @@ namespace GroupProjectCSharpSummer22
         {
             table.Rows.Clear();
             dataGridView1.Refresh();
+            MaterialEstimateListField.RemoveRange(0, MaterialEstimateListField.Count);
+
         }
 
         private void NewBtn_Click(object sender, EventArgs e)
@@ -80,11 +82,17 @@ namespace GroupProjectCSharpSummer22
             UnitTxt.Clear();
             NotesTxt.Clear();
             CateTxt.Clear();
+            
         }
 
         private void CalcBtn_Click(object sender, EventArgs e)
         {
-
+            var totalCost = 0.00;
+            foreach (var row in table.Rows.)
+            {
+                totalCost += table.Columns[6];
+            }
+            TotalTxt.Text = totalCost.ToString("C");
         }
 
         private void ExitBtn_Click(object sender, EventArgs e)
