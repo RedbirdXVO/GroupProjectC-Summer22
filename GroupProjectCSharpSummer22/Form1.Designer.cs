@@ -247,6 +247,7 @@
             this.QuantTxt.Name = "QuantTxt";
             this.QuantTxt.Size = new System.Drawing.Size(145, 23);
             this.QuantTxt.TabIndex = 23;
+            this.QuantTxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.QuantTxt_KeyPress);
             // 
             // UnitTxt
             // 
@@ -254,6 +255,7 @@
             this.UnitTxt.Name = "UnitTxt";
             this.UnitTxt.Size = new System.Drawing.Size(145, 23);
             this.UnitTxt.TabIndex = 24;
+            this.UnitTxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.UnitTxt_KeyPress);
             // 
             // NotesTxt
             // 
