@@ -27,19 +27,33 @@ namespace GroupProjectCSharpSummer22
 
         private void SaveBtn_Click(object sender, EventArgs e)
         {
-            //CateTxt, ItemTxt, MateTxt, SizeTxt, QuantTxt, UnitTxt, NotesTxt
-            var materielEstimate = new MaterialEstimate(ItemTxt.Text.ToString(), MateTxt.Text.ToString(), SizeTxt.Text.ToString(), Convert.ToDouble(QuantTxt.Text), Convert.ToDouble(UnitTxt.Text), NotesTxt.Text.ToString(), CateTxt.Text.ToString());
-            MaterialEstimateListField.Add(materielEstimate);
-            table.Rows.Add(materielEstimate);
-            ItemTxt.Clear();
-            MateTxt.Clear();
-            SizeTxt.Clear();
-            QuantTxt.Clear();
-            UnitTxt.Clear();
-            NotesTxt.Clear();
-            CateTxt.Clear();
+            {
+                if (!string.IsNullOrEmpty(MateTxt.Text) && !string.IsNullOrEmpty(SizeTxt.Text) && !string.IsNullOrEmpty(ItemTxt.Text) && !string.IsNullOrEmpty(QuantTxt.Text) && !string.IsNullOrEmpty(UnitTxt.Text) && !string.IsNullOrEmpty(CateTxt.Text))
+                {
+                    var materielEstimate = new MaterialEstimate(ItemTxt.Text.ToString(), MateTxt.Text.ToString(), SizeTxt.Text.ToString(), Convert.ToDouble(QuantTxt.Text), Convert.ToDouble(UnitTxt.Text), NotesTxt.Text.ToString(), CateTxt.Text.ToString());
+                    MaterialEstimateListField.Add(materielEstimate);
+                    var newRow = table.Rows.Add();
+                    newRow["Category"] = materielEstimate.Category;
+                    newRow["Item"] = materielEstimate.Item;
+                    newRow["Material"] = materielEstimate.Material;
+                    newRow["Size Description"] = materielEstimate.MaterialSize;
+                    newRow["Quantity"] = materielEstimate.Quantity;
+                    newRow["Unit Cost"] = materielEstimate.UnitCost;
+                    newRow["Cost"] = materielEstimate.UnitCost;
+                    newRow["Notes"] = materielEstimate.Note;
 
+                }
+                else
+                {
+                    MessageBox.Show("All inputs besides 'Notes' must be filled.");
+                }
+            }
+            //Calculate();
         }
+        /*private void Calculate()
+        {
+            foreach (var row in table.Rows)        
+        }*/
 
         private void TotalTxt_TextChanged(object sender, EventArgs e)
         {
@@ -54,7 +68,13 @@ namespace GroupProjectCSharpSummer22
 
         private void NewBtn_Click(object sender, EventArgs e)
         {
-            dataGridView1.Rows.Add();
+            ItemTxt.Clear();
+            MateTxt.Clear();
+            SizeTxt.Clear();
+            QuantTxt.Clear();
+            UnitTxt.Clear();
+            NotesTxt.Clear();
+            CateTxt.Clear();
         }
 
         private void CalcBtn_Click(object sender, EventArgs e)

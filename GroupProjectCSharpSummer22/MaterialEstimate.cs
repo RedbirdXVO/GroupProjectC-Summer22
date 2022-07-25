@@ -20,6 +20,7 @@
             UnitCost = unitCost;
             Cost = quantity * unitCost;
             Note = note;
+            
         }
     }
 }
