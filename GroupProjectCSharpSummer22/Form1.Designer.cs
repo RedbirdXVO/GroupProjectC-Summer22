@@ -51,6 +51,7 @@
             this.QuantTxt = new System.Windows.Forms.TextBox();
             this.UnitTxt = new System.Windows.Forms.TextBox();
             this.NotesTxt = new System.Windows.Forms.TextBox();
+            this.EditBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,14 +67,14 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 43;
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(1075, 361);
+            this.dataGridView1.Size = new System.Drawing.Size(1484, 361);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.DataSourceChanged += new System.EventHandler(this.dataGridView1_DataSourceChanged);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
             // NewBtn
             // 
-            this.NewBtn.Location = new System.Drawing.Point(247, 575);
+            this.NewBtn.Location = new System.Drawing.Point(317, 595);
             this.NewBtn.Name = "NewBtn";
             this.NewBtn.Size = new System.Drawing.Size(75, 25);
             this.NewBtn.TabIndex = 3;
@@ -83,7 +84,7 @@
             // 
             // SaveBtn
             // 
-            this.SaveBtn.Location = new System.Drawing.Point(364, 575);
+            this.SaveBtn.Location = new System.Drawing.Point(492, 595);
             this.SaveBtn.Name = "SaveBtn";
             this.SaveBtn.Size = new System.Drawing.Size(75, 25);
             this.SaveBtn.TabIndex = 4;
@@ -93,7 +94,7 @@
             // 
             // DeleteBtn
             // 
-            this.DeleteBtn.Location = new System.Drawing.Point(480, 575);
+            this.DeleteBtn.Location = new System.Drawing.Point(943, 595);
             this.DeleteBtn.Name = "DeleteBtn";
             this.DeleteBtn.Size = new System.Drawing.Size(75, 25);
             this.DeleteBtn.TabIndex = 5;
@@ -104,7 +105,7 @@
             // ClearBtn
             // 
             this.ClearBtn.AutoSize = true;
-            this.ClearBtn.Location = new System.Drawing.Point(597, 575);
+            this.ClearBtn.Location = new System.Drawing.Point(1130, 595);
             this.ClearBtn.Name = "ClearBtn";
             this.ClearBtn.Size = new System.Drawing.Size(75, 25);
             this.ClearBtn.TabIndex = 6;
@@ -114,7 +115,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(429, 372);
+            this.textBox1.Location = new System.Drawing.Point(638, 372);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(232, 23);
@@ -123,7 +124,7 @@
             // 
             // TotalTxt
             // 
-            this.TotalTxt.Location = new System.Drawing.Point(429, 401);
+            this.TotalTxt.Location = new System.Drawing.Point(638, 401);
             this.TotalTxt.Name = "TotalTxt";
             this.TotalTxt.ReadOnly = true;
             this.TotalTxt.Size = new System.Drawing.Size(232, 23);
@@ -132,9 +133,9 @@
             // 
             // CalcBtn
             // 
-            this.CalcBtn.Location = new System.Drawing.Point(824, 579);
+            this.CalcBtn.Location = new System.Drawing.Point(638, 432);
             this.CalcBtn.Name = "CalcBtn";
-            this.CalcBtn.Size = new System.Drawing.Size(90, 23);
+            this.CalcBtn.Size = new System.Drawing.Size(232, 23);
             this.CalcBtn.TabIndex = 9;
             this.CalcBtn.Text = "Calculate";
             this.CalcBtn.UseVisualStyleBackColor = true;
@@ -142,7 +143,7 @@
             // 
             // ExitBtn
             // 
-            this.ExitBtn.Location = new System.Drawing.Point(990, 579);
+            this.ExitBtn.Location = new System.Drawing.Point(1396, 614);
             this.ExitBtn.Name = "ExitBtn";
             this.ExitBtn.Size = new System.Drawing.Size(90, 23);
             this.ExitBtn.TabIndex = 10;
@@ -153,7 +154,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(109, 432);
+            this.label1.Location = new System.Drawing.Point(253, 432);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 15);
             this.label1.TabIndex = 11;
@@ -163,7 +164,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(133, 465);
+            this.label2.Location = new System.Drawing.Point(277, 461);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(34, 15);
             this.label2.TabIndex = 12;
@@ -172,7 +173,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(114, 499);
+            this.label3.Location = new System.Drawing.Point(258, 499);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 15);
             this.label3.TabIndex = 13;
@@ -181,7 +182,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(74, 529);
+            this.label4.Location = new System.Drawing.Point(218, 529);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(93, 15);
             this.label4.TabIndex = 14;
@@ -190,7 +191,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(611, 432);
+            this.label5.Location = new System.Drawing.Point(881, 432);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(56, 15);
             this.label5.TabIndex = 15;
@@ -200,7 +201,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(608, 465);
+            this.label6.Location = new System.Drawing.Point(878, 465);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(59, 15);
             this.label6.TabIndex = 16;
@@ -209,7 +210,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(626, 499);
+            this.label8.Location = new System.Drawing.Point(896, 499);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(41, 15);
             this.label8.TabIndex = 18;
@@ -217,61 +218,72 @@
             // 
             // CateTxt
             // 
-            this.CateTxt.Location = new System.Drawing.Point(173, 424);
+            this.CateTxt.Location = new System.Drawing.Point(317, 424);
             this.CateTxt.Name = "CateTxt";
             this.CateTxt.Size = new System.Drawing.Size(250, 23);
             this.CateTxt.TabIndex = 19;
             // 
             // ItemTxt
             // 
-            this.ItemTxt.Location = new System.Drawing.Point(173, 457);
+            this.ItemTxt.Location = new System.Drawing.Point(317, 453);
             this.ItemTxt.Name = "ItemTxt";
             this.ItemTxt.Size = new System.Drawing.Size(250, 23);
             this.ItemTxt.TabIndex = 20;
             // 
             // MateTxt
             // 
-            this.MateTxt.Location = new System.Drawing.Point(173, 491);
+            this.MateTxt.Location = new System.Drawing.Point(317, 491);
             this.MateTxt.Name = "MateTxt";
             this.MateTxt.Size = new System.Drawing.Size(250, 23);
             this.MateTxt.TabIndex = 21;
             // 
             // SizeTxt
             // 
-            this.SizeTxt.Location = new System.Drawing.Point(173, 526);
+            this.SizeTxt.Location = new System.Drawing.Point(317, 526);
             this.SizeTxt.Name = "SizeTxt";
             this.SizeTxt.Size = new System.Drawing.Size(250, 23);
             this.SizeTxt.TabIndex = 22;
             // 
             // QuantTxt
             // 
-            this.QuantTxt.Location = new System.Drawing.Point(673, 429);
+            this.QuantTxt.Location = new System.Drawing.Point(943, 429);
             this.QuantTxt.Name = "QuantTxt";
-            this.QuantTxt.Size = new System.Drawing.Size(145, 23);
+            this.QuantTxt.Size = new System.Drawing.Size(262, 23);
             this.QuantTxt.TabIndex = 23;
             this.QuantTxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.QuantTxt_KeyPress);
             // 
             // UnitTxt
             // 
-            this.UnitTxt.Location = new System.Drawing.Point(673, 462);
+            this.UnitTxt.Location = new System.Drawing.Point(943, 462);
             this.UnitTxt.Name = "UnitTxt";
-            this.UnitTxt.Size = new System.Drawing.Size(145, 23);
+            this.UnitTxt.Size = new System.Drawing.Size(262, 23);
             this.UnitTxt.TabIndex = 24;
             this.UnitTxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.UnitTxt_KeyPress);
             // 
             // NotesTxt
             // 
-            this.NotesTxt.Location = new System.Drawing.Point(673, 499);
+            this.NotesTxt.Location = new System.Drawing.Point(943, 496);
             this.NotesTxt.Multiline = true;
             this.NotesTxt.Name = "NotesTxt";
-            this.NotesTxt.Size = new System.Drawing.Size(145, 74);
+            this.NotesTxt.Size = new System.Drawing.Size(262, 74);
             this.NotesTxt.TabIndex = 26;
+            // 
+            // EditBtn
+            // 
+            this.EditBtn.Location = new System.Drawing.Point(5, 371);
+            this.EditBtn.Name = "EditBtn";
+            this.EditBtn.Size = new System.Drawing.Size(75, 143);
+            this.EditBtn.TabIndex = 27;
+            this.EditBtn.Text = "Select/Edit";
+            this.EditBtn.UseVisualStyleBackColor = true;
+            this.EditBtn.Click += new System.EventHandler(this.EditBtn_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1085, 610);
+            this.ClientSize = new System.Drawing.Size(1494, 645);
+            this.Controls.Add(this.EditBtn);
             this.Controls.Add(this.NotesTxt);
             this.Controls.Add(this.UnitTxt);
             this.Controls.Add(this.QuantTxt);
@@ -331,5 +343,6 @@
         private TextBox QuantTxt;
         private TextBox UnitTxt;
         private TextBox NotesTxt;
+        private Button EditBtn;
     }
 }
