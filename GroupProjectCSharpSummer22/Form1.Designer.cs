@@ -60,6 +60,7 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Top;
             this.dataGridView1.Location = new System.Drawing.Point(5, 5);
@@ -74,47 +75,52 @@
             // 
             // NewBtn
             // 
+            this.NewBtn.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.NewBtn.Location = new System.Drawing.Point(317, 595);
             this.NewBtn.Name = "NewBtn";
             this.NewBtn.Size = new System.Drawing.Size(75, 25);
             this.NewBtn.TabIndex = 3;
             this.NewBtn.Text = "New";
-            this.NewBtn.UseVisualStyleBackColor = true;
+            this.NewBtn.UseVisualStyleBackColor = false;
             this.NewBtn.Click += new System.EventHandler(this.NewBtn_Click);
             // 
             // SaveBtn
             // 
+            this.SaveBtn.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.SaveBtn.Location = new System.Drawing.Point(492, 595);
             this.SaveBtn.Name = "SaveBtn";
             this.SaveBtn.Size = new System.Drawing.Size(75, 25);
             this.SaveBtn.TabIndex = 4;
             this.SaveBtn.Text = "Save";
-            this.SaveBtn.UseVisualStyleBackColor = true;
+            this.SaveBtn.UseVisualStyleBackColor = false;
             this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
             // 
             // DeleteBtn
             // 
+            this.DeleteBtn.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.DeleteBtn.Location = new System.Drawing.Point(943, 595);
             this.DeleteBtn.Name = "DeleteBtn";
             this.DeleteBtn.Size = new System.Drawing.Size(75, 25);
             this.DeleteBtn.TabIndex = 5;
             this.DeleteBtn.Text = "Delete";
-            this.DeleteBtn.UseVisualStyleBackColor = true;
+            this.DeleteBtn.UseVisualStyleBackColor = false;
             this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
             // 
             // ClearBtn
             // 
             this.ClearBtn.AutoSize = true;
+            this.ClearBtn.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.ClearBtn.Location = new System.Drawing.Point(1130, 595);
             this.ClearBtn.Name = "ClearBtn";
             this.ClearBtn.Size = new System.Drawing.Size(75, 25);
             this.ClearBtn.TabIndex = 6;
             this.ClearBtn.Text = "Clear";
-            this.ClearBtn.UseVisualStyleBackColor = true;
+            this.ClearBtn.UseVisualStyleBackColor = false;
             this.ClearBtn.Click += new System.EventHandler(this.ClearBtn_Click);
             // 
             // TotalText
             // 
+            this.TotalText.BackColor = System.Drawing.Color.Salmon;
             this.TotalText.Location = new System.Drawing.Point(638, 372);
             this.TotalText.Name = "TotalText";
             this.TotalText.ReadOnly = true;
@@ -124,6 +130,7 @@
             // 
             // TotalTxt
             // 
+            this.TotalTxt.BackColor = System.Drawing.Color.Salmon;
             this.TotalTxt.Location = new System.Drawing.Point(638, 401);
             this.TotalTxt.Name = "TotalTxt";
             this.TotalTxt.ReadOnly = true;
@@ -133,22 +140,24 @@
             // 
             // CalcBtn
             // 
+            this.CalcBtn.BackColor = System.Drawing.Color.IndianRed;
             this.CalcBtn.Location = new System.Drawing.Point(638, 432);
             this.CalcBtn.Name = "CalcBtn";
-            this.CalcBtn.Size = new System.Drawing.Size(232, 23);
+            this.CalcBtn.Size = new System.Drawing.Size(232, 48);
             this.CalcBtn.TabIndex = 9;
             this.CalcBtn.Text = "Calculate";
-            this.CalcBtn.UseVisualStyleBackColor = true;
+            this.CalcBtn.UseVisualStyleBackColor = false;
             this.CalcBtn.Click += new System.EventHandler(this.CalcBtn_Click);
             // 
             // ExitBtn
             // 
+            this.ExitBtn.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.ExitBtn.Location = new System.Drawing.Point(1396, 614);
             this.ExitBtn.Name = "ExitBtn";
             this.ExitBtn.Size = new System.Drawing.Size(90, 23);
             this.ExitBtn.TabIndex = 10;
             this.ExitBtn.Text = "Exit";
-            this.ExitBtn.UseVisualStyleBackColor = true;
+            this.ExitBtn.UseVisualStyleBackColor = false;
             this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
             // 
             // label1
@@ -218,6 +227,7 @@
             // 
             // CateTxt
             // 
+            this.CateTxt.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.CateTxt.Location = new System.Drawing.Point(317, 424);
             this.CateTxt.Name = "CateTxt";
             this.CateTxt.Size = new System.Drawing.Size(250, 23);
@@ -225,6 +235,7 @@
             // 
             // ItemTxt
             // 
+            this.ItemTxt.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ItemTxt.Location = new System.Drawing.Point(317, 453);
             this.ItemTxt.Name = "ItemTxt";
             this.ItemTxt.Size = new System.Drawing.Size(250, 23);
@@ -232,6 +243,7 @@
             // 
             // MateTxt
             // 
+            this.MateTxt.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MateTxt.Location = new System.Drawing.Point(317, 491);
             this.MateTxt.Name = "MateTxt";
             this.MateTxt.Size = new System.Drawing.Size(250, 23);
@@ -239,6 +251,7 @@
             // 
             // SizeTxt
             // 
+            this.SizeTxt.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.SizeTxt.Location = new System.Drawing.Point(317, 526);
             this.SizeTxt.Name = "SizeTxt";
             this.SizeTxt.Size = new System.Drawing.Size(250, 23);
@@ -246,6 +259,7 @@
             // 
             // QuantTxt
             // 
+            this.QuantTxt.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.QuantTxt.Location = new System.Drawing.Point(943, 429);
             this.QuantTxt.Name = "QuantTxt";
             this.QuantTxt.Size = new System.Drawing.Size(262, 23);
@@ -254,6 +268,7 @@
             // 
             // UnitTxt
             // 
+            this.UnitTxt.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.UnitTxt.Location = new System.Drawing.Point(943, 462);
             this.UnitTxt.Name = "UnitTxt";
             this.UnitTxt.Size = new System.Drawing.Size(262, 23);
@@ -262,6 +277,7 @@
             // 
             // NotesTxt
             // 
+            this.NotesTxt.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.NotesTxt.Location = new System.Drawing.Point(943, 496);
             this.NotesTxt.Multiline = true;
             this.NotesTxt.Name = "NotesTxt";
@@ -270,18 +286,20 @@
             // 
             // EditBtn
             // 
+            this.EditBtn.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.EditBtn.Location = new System.Drawing.Point(5, 371);
             this.EditBtn.Name = "EditBtn";
             this.EditBtn.Size = new System.Drawing.Size(75, 143);
             this.EditBtn.TabIndex = 27;
             this.EditBtn.Text = "Select/Edit";
-            this.EditBtn.UseVisualStyleBackColor = true;
+            this.EditBtn.UseVisualStyleBackColor = false;
             this.EditBtn.Click += new System.EventHandler(this.EditBtn_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1494, 645);
             this.Controls.Add(this.EditBtn);
             this.Controls.Add(this.NotesTxt);
