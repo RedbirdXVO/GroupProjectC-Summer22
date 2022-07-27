@@ -33,7 +33,7 @@
             this.SaveBtn = new System.Windows.Forms.Button();
             this.DeleteBtn = new System.Windows.Forms.Button();
             this.ClearBtn = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TotalText = new System.Windows.Forms.TextBox();
             this.TotalTxt = new System.Windows.Forms.TextBox();
             this.CalcBtn = new System.Windows.Forms.Button();
             this.ExitBtn = new System.Windows.Forms.Button();
@@ -113,14 +113,14 @@
             this.ClearBtn.UseVisualStyleBackColor = true;
             this.ClearBtn.Click += new System.EventHandler(this.ClearBtn_Click);
             // 
-            // textBox1
+            // TotalText
             // 
-            this.textBox1.Location = new System.Drawing.Point(638, 372);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(232, 23);
-            this.textBox1.TabIndex = 7;
-            this.textBox1.Text = "Your Total is:";
+            this.TotalText.Location = new System.Drawing.Point(638, 372);
+            this.TotalText.Name = "TotalText";
+            this.TotalText.ReadOnly = true;
+            this.TotalText.Size = new System.Drawing.Size(232, 23);
+            this.TotalText.TabIndex = 7;
+            this.TotalText.Text = "Your Total is:";
             // 
             // TotalTxt
             // 
@@ -301,7 +301,7 @@
             this.Controls.Add(this.ExitBtn);
             this.Controls.Add(this.CalcBtn);
             this.Controls.Add(this.TotalTxt);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TotalText);
             this.Controls.Add(this.ClearBtn);
             this.Controls.Add(this.DeleteBtn);
             this.Controls.Add(this.SaveBtn);
@@ -324,7 +324,7 @@
         private Button SaveBtn;
         private Button DeleteBtn;
         private Button ClearBtn;
-        private TextBox textBox1;
+        private TextBox TotalText;
         private TextBox TotalTxt;
         private Button CalcBtn;
         private Button ExitBtn;
