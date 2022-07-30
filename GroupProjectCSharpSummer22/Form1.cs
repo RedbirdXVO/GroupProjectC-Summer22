@@ -54,6 +54,7 @@ namespace GroupProjectCSharpSummer22
                         MaterialEstimateListField[selectedIndex].Note = NotesTxt.Text;
                         MaterialEstimateListField[selectedIndex].UnitCost = Convert.ToDouble(UnitTxt.Text);
                         MaterialEstimateListField[selectedIndex].Quantity = Convert.ToInt32(QuantTxt.Text);
+                        MaterialEstimateListField[selectedIndex].Cost = MaterialEstimateListField[selectedIndex].Quantity * MaterialEstimateListField[selectedIndex].UnitCost;
                         MaterialEstimateListField[selectedIndex].Item = ItemTxt.Text;
                         //If the Select/Edit button was pressed, this part of the method will replace the current row in both the List and DataGrid to the new inputs
 
